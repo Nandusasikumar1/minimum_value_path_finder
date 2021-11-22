@@ -44,7 +44,7 @@ class minimum_value_path_finder():
                     path.append(min_val_index)
                 except:
                     print('All min vals used')                
-        return 'indices are :'+ '-->'.join(map(str,path)),'values are :' + '-->'.join(map(str,[self.random_matrix[i[0],i[1]] for i in path]))
+        return 'indices are :'+ '-->'.join(map(str,path)),'values are :' + '-->'.join(map(str,[self.index_to_val(i) for i in path]))
 
 
 
